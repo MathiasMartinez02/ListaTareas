@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block content %}
+<div class="wrapper">
+  <div class="login_box">
+    <div class="login-header">
+      <h1>{% block title %}Registro{% endblock %}</h1>
+    </div>
+    <form method="post">
+      <div class="input_box">
+        <label for="username" class="label">Username</label>
+        <input name="username" id="username" required class="input-field" />
+      </div>
+      <div class="input_box">
+        <label for="password" class="label">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="input-field"
+          required
+        />
+        <i class="bx bx-lock-alt icon"></i>
+      </div>
+      <div class="input_box">
+        <input type="submit" value="Registrarse" class="input-submit" />
+      </div>
+    </form>
+    {%endblock%}
+  </div>
+</div>
